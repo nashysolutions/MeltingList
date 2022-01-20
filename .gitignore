@@ -1,0 +1,5 @@
+Carthage/
+*.xcworkspacedata
+*.xcuserstate
+MeltingList.xcodeproj/xcuserdata
+MeltingList.xcodeproj/project.xcworkspace/xcshareddata
