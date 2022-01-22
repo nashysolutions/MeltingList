@@ -4,11 +4,11 @@ struct CompaniesScene: UIViewControllerRepresentable {
     
     let companies: Collection
     
-    func makeUIViewController(context: Context) -> CompaniesViewController {
+    func makeUIViewController(context: Context) -> CompaniesTableViewController {
         
         let tableView = CompaniesTableView(frame: .zero, style: .plain)
         
-        let controller = CompaniesViewController(tableView: tableView) { tableView, indexPath, item in
+        let controller = CompaniesTableViewController(tableView: tableView) { tableView, indexPath, item in
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
             cell.textLabel?.text = item.name
             return cell
@@ -27,7 +27,7 @@ struct CompaniesScene: UIViewControllerRepresentable {
         return controller
     }
     
-    func updateUIViewController(_ controller: CompaniesViewController, context: Context) {
+    func updateUIViewController(_ controller: CompaniesTableViewController, context: Context) {
         
     }
 }

@@ -15,7 +15,7 @@
 		50D987102792D989001FF7DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D9870E2792D989001FF7DF /* LaunchScreen.storyboard */; };
 		50D987252792D9E6001FF7DF /* CompaniesTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987172792D9E6001FF7DF /* CompaniesTableViewDelegate.swift */; };
 		50D987262792D9E6001FF7DF /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987182792D9E6001FF7DF /* DataLoader.swift */; };
-		50D987272792D9E6001FF7DF /* CompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987192792D9E6001FF7DF /* CompaniesViewController.swift */; };
+		50D987272792D9E6001FF7DF /* CompaniesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987192792D9E6001FF7DF /* CompaniesTableViewController.swift */; };
 		50D987282792D9E6001FF7DF /* HeaderHackTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9871A2792D9E6001FF7DF /* HeaderHackTableView.swift */; };
 		50D987292792D9E6001FF7DF /* CompaniesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9871B2792D9E6001FF7DF /* CompaniesScene.swift */; };
 		50D9872A2792D9E6001FF7DF /* CompaniesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9871C2792D9E6001FF7DF /* CompaniesTableView.swift */; };
@@ -55,7 +55,7 @@
 		50D987112792D989001FF7DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D987172792D9E6001FF7DF /* CompaniesTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesTableViewDelegate.swift; sourceTree = "<group>"; };
 		50D987182792D9E6001FF7DF /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
-		50D987192792D9E6001FF7DF /* CompaniesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesViewController.swift; sourceTree = "<group>"; };
+		50D987192792D9E6001FF7DF /* CompaniesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesTableViewController.swift; sourceTree = "<group>"; };
 		50D9871A2792D9E6001FF7DF /* HeaderHackTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderHackTableView.swift; sourceTree = "<group>"; };
 		50D9871B2792D9E6001FF7DF /* CompaniesScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesScene.swift; sourceTree = "<group>"; };
 		50D9871C2792D9E6001FF7DF /* CompaniesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesTableView.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				50D987202792D9E6001FF7DF /* DestinationViewController.swift */,
 				50D9871C2792D9E6001FF7DF /* CompaniesTableView.swift */,
 				50D987172792D9E6001FF7DF /* CompaniesTableViewDelegate.swift */,
-				50D987192792D9E6001FF7DF /* CompaniesViewController.swift */,
+				50D987192792D9E6001FF7DF /* CompaniesTableViewController.swift */,
 				50D987182792D9E6001FF7DF /* DataLoader.swift */,
 				50D9871D2792D9E6001FF7DF /* ArrowHeaderView */,
 				50D9871A2792D9E6001FF7DF /* HeaderHackTableView.swift */,
@@ -235,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50D987272792D9E6001FF7DF /* CompaniesViewController.swift in Sources */,
+				50D987272792D9E6001FF7DF /* CompaniesTableViewController.swift in Sources */,
 				50D987262792D9E6001FF7DF /* DataLoader.swift in Sources */,
 				50D987252792D9E6001FF7DF /* CompaniesTableViewDelegate.swift in Sources */,
 				50D9872D2792D9E6001FF7DF /* DestinationViewController.swift in Sources */,
