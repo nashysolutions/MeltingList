@@ -1,7 +1,7 @@
 import UIKit
 import AccordionTable
 
-class TypicalTableViewController<TableView: UITableView, Section: Hashable, Row: Hashable>: UIViewController {
+class AccordionTableViewController<TableView: UITableView, Section: Hashable, Row: Hashable>: UIViewController {
     
     typealias CellProvider = (UITableView, IndexPath, Row) -> UITableViewCell
     typealias HeaderProvider = (UITableView, Int, Section) -> HeaderView

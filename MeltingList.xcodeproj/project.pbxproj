@@ -25,7 +25,7 @@
 		50D9872E2792D9E6001FF7DF /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987212792D9E6001FF7DF /* HomeScene.swift */; };
 		50D9872F2792D9E6001FF7DF /* staff.json in Resources */ = {isa = PBXBuildFile; fileRef = 50D987232792D9E6001FF7DF /* staff.json */; };
 		50D987302792D9E6001FF7DF /* JSON-README.md in Resources */ = {isa = PBXBuildFile; fileRef = 50D987242792D9E6001FF7DF /* JSON-README.md */; };
-		50D987372792DA60001FF7DF /* TypicalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987352792DA60001FF7DF /* TypicalTableViewController.swift */; };
+		50D987372792DA60001FF7DF /* AccordionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987352792DA60001FF7DF /* AccordionTableViewController.swift */; };
 		50D987382792DA60001FF7DF /* AccordionTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987362792DA60001FF7DF /* AccordionTableViewDelegate.swift */; };
 		50D9873A2792DA73001FF7DF /* Array+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987392792DA73001FF7DF /* Array+helper.swift */; };
 /* End PBXBuildFile section */
@@ -65,7 +65,7 @@
 		50D987212792D9E6001FF7DF /* HomeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 		50D987232792D9E6001FF7DF /* staff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = staff.json; sourceTree = "<group>"; };
 		50D987242792D9E6001FF7DF /* JSON-README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "JSON-README.md"; sourceTree = "<group>"; };
-		50D987352792DA60001FF7DF /* TypicalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypicalTableViewController.swift; sourceTree = "<group>"; };
+		50D987352792DA60001FF7DF /* AccordionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionTableViewController.swift; sourceTree = "<group>"; };
 		50D987362792DA60001FF7DF /* AccordionTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionTableViewDelegate.swift; sourceTree = "<group>"; };
 		50D987392792DA73001FF7DF /* Array+helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,7 +153,7 @@
 		50D9873B2792DA7B001FF7DF /* BoilerPlate */ = {
 			isa = PBXGroup;
 			children = (
-				50D987352792DA60001FF7DF /* TypicalTableViewController.swift */,
+				50D987352792DA60001FF7DF /* AccordionTableViewController.swift */,
 				50D987362792DA60001FF7DF /* AccordionTableViewDelegate.swift */,
 			);
 			path = BoilerPlate;
@@ -244,7 +244,7 @@
 				50D987382792DA60001FF7DF /* AccordionTableViewDelegate.swift in Sources */,
 				50A20C222799462600E5E285 /* Model.swift in Sources */,
 				50D987292792D9E6001FF7DF /* CompaniesScene.swift in Sources */,
-				50D987372792DA60001FF7DF /* TypicalTableViewController.swift in Sources */,
+				50D987372792DA60001FF7DF /* AccordionTableViewController.swift in Sources */,
 				50D987282792D9E6001FF7DF /* HeaderHackTableView.swift in Sources */,
 				50D9873A2792DA73001FF7DF /* Array+helper.swift in Sources */,
 				50D9872E2792D9E6001FF7DF /* HomeScene.swift in Sources */,

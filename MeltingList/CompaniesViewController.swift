@@ -1,6 +1,6 @@
 import UIKit
 
-final class CompaniesViewController: TypicalTableViewController<CompaniesTableView, Company, Person> {
+final class CompaniesViewController: AccordionTableViewController<CompaniesTableView, Company, Person> {
     
     private lazy var delegate = CompaniesTableViewDelegate(diffableTableManager)
     
