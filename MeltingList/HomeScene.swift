@@ -2,7 +2,9 @@ import SwiftUI
 
 struct HomeScene: View {
 
-    @State private var companies = Collection()
+    @State private var companies = CompanyStore()
+    
+    @StateObject private var store = BackingStore()
 
     private var myView: some View {
         Group {
@@ -11,7 +13,7 @@ struct HomeScene: View {
             } else {
                 NavigationLink(
                     "Ready", destination:
-                        CompaniesScene(companies: companies)
+                        CompaniesScene(companies: companies, cellDelegate: store, listDelegate: store, dataSource: store)
                 )
             }
         }

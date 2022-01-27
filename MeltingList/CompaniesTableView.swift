@@ -5,7 +5,7 @@ final class CompaniesTableView: HeaderHackTableView {
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         registerSectionHeaders()
-        register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        register(CompanyCell.self, forCellReuseIdentifier: "Cell")
     }
     
     required init?(coder: NSCoder) {

@@ -2,9 +2,11 @@ import UIKit
 
 final class CompaniesTableViewController: AccordionTableViewController<CompaniesTableView, Company, Person> {
     
-    private lazy var delegate = CompaniesTableViewDelegate(diffableTableManager)
+    private(set) lazy var tableMinion = CompanyTableMinion(diffableTableManager)
     
-    var companies: Collection!
+    var companies: CompanyStore!
+    
+    weak var delegate: CompaniesTableViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +26,12 @@ final class CompaniesTableViewController: AccordionTableViewController<Companies
         
         tableView.disableFloatingHeaders()
         
-        tableView.delegate = delegate
+        tableView.delegate = tableMinion
         
-        delegate.didSelect = { [unowned self] indexPath in
-            let controller = DestinationViewController()
-            self.show(controller, sender: nil)
-        }
+//        tableMinion.didSelect = { [unowned self] indexPath in
+//            let controller = DestinationViewController()
+//            self.show(controller, sender: nil)
+//        }
         
         // Rediculous workaround for swiftui navigation view.
         DispatchQueue.main.async {
@@ -50,7 +52,11 @@ final class CompaniesTableViewController: AccordionTableViewController<Companies
         sender.isEnabled = false
         Task {
             let data = try! await DataLoader.go(randomise: true)
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                self.delegate?.companiesTableViewController(self, willUpdateUsingStore: data)
                 self.update(with: data, animated: true) {
                     sender.isEnabled = true
                     self.tableView.scrollToNearestSelectedRow(at: .middle, animated: true)

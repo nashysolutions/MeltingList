@@ -2,8 +2,8 @@ import Foundation
 
 struct DataLoader {
 
-    static func go(randomise: Bool) async throws -> Collection {
-        var collection = Collection()
+    static func go(randomise: Bool) async throws -> CompanyStore {
+        var collection = CompanyStore()
         let companies = try await read()
         for company in companies {
             if randomise {
