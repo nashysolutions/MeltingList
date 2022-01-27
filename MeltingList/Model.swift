@@ -1,22 +1,32 @@
 import UIKit
 import AccordionTable
 
-struct Company: Decodable, Hashable {
+struct Company: Decodable, Hashable, Comparable {
+    
+    static func < (lhs: Company, rhs: Company) -> Bool {
+        lhs.name < rhs.name
+    }
+    
     let identifier: String
     let name: String
     let staff: [Person]
 }
 
-struct Person: Decodable, Hashable {
+struct Person: Decodable, Hashable, Comparable {
+    
+    static func < (lhs: Person, rhs: Person) -> Bool {
+        lhs.name < rhs.name
+    }
+    
     let identifier: String
     let name: String
 }
 
-typealias CompanyStore = OrderedDictionary<Company, [Person]>
+typealias CompanyStore = Dictionary<Company, [Person]>
 
 final class BackingStore: ObservableObject {
     
-    typealias SwitchStore = OrderedDictionary<Person, Bool>
+    typealias SwitchStore = Dictionary<Person, Bool>
     
     private var switchStore = SwitchStore()
 }

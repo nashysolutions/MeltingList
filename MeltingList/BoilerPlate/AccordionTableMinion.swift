@@ -1,7 +1,7 @@
 import UIKit
 import AccordionTable
 
-class AccordionTableMinion<Section: Hashable, Item: Hashable>: NSObject, UITableViewDelegate {
+class AccordionTableMinion<Section: TableSection, Item: TableRow>: NSObject, UITableViewDelegate {
     
     let tableManager: AccordionTable<Section, Item>
     
