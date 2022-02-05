@@ -2,8 +2,6 @@ import UIKit
 
 final class CompanyCell: UITableViewCell {
 
-    var switchValueChanged: (Bool) -> Void = { _ in }
-    
     private let toggle = UISwitch()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -18,10 +16,16 @@ final class CompanyCell: UITableViewCell {
     
     @objc
     private func switchToggled(_ toggle: UISwitch) {
-        switchValueChanged(toggle.isOn)
+        delegate?.companyCell(self, switchToggled: toggle)
     }
     
     func updateState(isOn: Bool) {
         toggle.isOn = isOn
     }
+    
+    weak var delegate: CompanyCellDelegate?
+}
+
+protocol CompanyCellDelegate: AnyObject {
+    func companyCell(_ cell: CompanyCell, switchToggled toggle: UISwitch)
 }

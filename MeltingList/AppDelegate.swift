@@ -1,5 +1,4 @@
 import UIKit
-import SwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -12,19 +11,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = makeRootViewController()
         window?.makeKeyAndVisible()
         
-        opaqueNavBar()
-        
-        return true
-    }
-
-    private func opaqueNavBar() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        
+        return true
     }
 
-    private func makeRootViewController() -> UIHostingController<HomeScene> {
-        UIHostingController(rootView: HomeScene())
+    private func makeRootViewController() -> UINavigationController {
+        .init(rootViewController: ListViewController())
     }
 }

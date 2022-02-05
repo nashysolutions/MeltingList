@@ -2,10 +2,6 @@ import UIKit
 
 final class CompanyTableMinion: AccordionTableMinion<Company, Person> {
     
-    var didSelect: (IndexPath) -> Void = { _ in }
-    
-    weak var dataSource: CompanyTableMinionDataSource?
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         super.tableView(tableView, didSelectRowAt: indexPath)
         didSelect(indexPath)
@@ -30,4 +26,12 @@ final class CompanyTableMinion: AccordionTableMinion<Company, Person> {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         ArrowHeaderView.height
     }
+    
+    var didSelect: (IndexPath) -> Void = { _ in }
+    
+    weak var dataSource: CompanyTableMinionDataSource?
+}
+
+protocol CompanyTableMinionDataSource: AnyObject {
+    func companyTableMinion(_ companyTableMinion: CompanyTableMinion, shouldUpdateCell cell: CompanyCell, for person: Person) -> Bool
 }

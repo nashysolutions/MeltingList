@@ -3,11 +3,11 @@
 https://app.json-generator.com
 
 ```
-JG.repeat(1000, {
-  identifier: JG.objectId(),
+JG.repeat(3, {
+  identifier: JG.guid(),
   name: JG.company(),
   staff: JG.repeat(5, {
-    identifier: JG.objectId(),
+    identifier: JG.guid(),
     name: `${JG.firstName()} ${JG.lastName()}`
   }),
 });

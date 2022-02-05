@@ -1,65 +1,63 @@
-import UIKit
-import AccordionTable
+import Foundation
 
-struct Company: Decodable, Hashable, Comparable {
+struct Person: Decodable {
+    let identifier: String
+    let name: String
+}
+
+extension Person: Hashable, Comparable {
     
-    static func < (lhs: Company, rhs: Company) -> Bool {
+    static func <(lhs: Person, rhs: Person) -> Bool {
         lhs.name < rhs.name
     }
     
+    static func ==(lhs: Person, rhs: Person) -> Bool {
+        lhs.identifier == rhs.identifier
+    }
+}
+
+struct Company: Decodable {
     let identifier: String
     let name: String
     let staff: [Person]
 }
 
-struct Person: Decodable, Hashable, Comparable {
+extension Company: Hashable, Comparable {
     
-    static func < (lhs: Person, rhs: Person) -> Bool {
+    static func <(lhs: Company, rhs: Company) -> Bool {
         lhs.name < rhs.name
     }
     
-    let identifier: String
-    let name: String
-}
-
-typealias CompanyStore = Dictionary<Company, [Person]>
-
-final class BackingStore: ObservableObject {
-    
-    typealias SwitchStore = Dictionary<Person, Bool>
-    
-    private var switchStore = SwitchStore()
-}
-
-extension BackingStore: CompaniesTableViewControllerDelegate {
-    
-    func companiesTableViewController(_ controller: CompaniesTableViewController, willUpdateUsingStore companyStore: CompanyStore) {
-        cleanSwitchStore(using: companyStore)
+    static func ==(lhs: Company, rhs: Company) -> Bool {
+        lhs.identifier == rhs.identifier
     }
     
-    /// The switch store may have staff members that no longer exists, as determined by the new dataset.
-    /// - Parameter companyStore: The new incoming dataset.
-    private func cleanSwitchStore(using companyStore: CompanyStore) {
-        for company in companyStore.keys {
-            for person in switchStore.keys {
-                if company.staff.contains(person) == false {
-                    switchStore[person] = false
-                }
-            }
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
+        hasher.combine(name)
+    }
+}
+
+extension Company {
+    
+    func maybeRemoveRandomStaffMember() -> Company {
+        Company(
+            identifier: identifier,
+            name: name,
+            staff: staff.maybeRemoveRandomElement()
+        )
+    }
+}
+
+private extension Array where Element: Equatable {
+
+    func maybeRemoveRandomElement() -> [Element] {
+        let should = Bool.random()
+        guard should, let element = randomElement(), let index = firstIndex(of: element) else {
+            return self
         }
-    }
-}
-
-extension BackingStore: CompanyCellDelegate {
-    
-    func companyCellSwitchToggled(isOn: Bool, for person: Person) {
-        switchStore[person] = isOn
-    }
-}
-
-extension BackingStore: CompanyTableMinionDataSource {
-    
-    func companyTableMinion(_ companyTableMinion: CompanyTableMinion, shouldUpdateCell cell: CompanyCell, for person: Person) -> Bool {
-        switchStore[person] ?? false
+        var myself = self
+        myself.remove(at: index)
+        return myself
     }
 }

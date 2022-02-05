@@ -24,6 +24,7 @@ class HeaderHackTableView: UITableView {
         return UIView(frame: frame)
     }
     
+    // override me
     var headerHeight: CGFloat {
         return 0
     }

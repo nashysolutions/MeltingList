@@ -7,41 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5078199A27AE8FC8001AC9F8 /* AccordionTable.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5078199927AE8FC8001AC9F8 /* AccordionTable.xcframework */; };
+		5078199B27AE8FC8001AC9F8 /* AccordionTable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5078199927AE8FC8001AC9F8 /* AccordionTable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5079056E279C05D80014FF35 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079056D279C05D80014FF35 /* CompanyCell.swift */; };
-		50790570279C2F360014FF35 /* CompanyCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079056F279C2F360014FF35 /* CompanyCellDelegate.swift */; };
-		50790572279C2F810014FF35 /* CompanyTableMinionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50790571279C2F810014FF35 /* CompanyTableMinionDataSource.swift */; };
-		507B0D96279C767A00276F66 /* AccordionTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507B0D95279C767A00276F66 /* AccordionTable.framework */; };
-		507B0D97279C767A00276F66 /* AccordionTable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 507B0D95279C767A00276F66 /* AccordionTable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		507B0D99279C7C7A00276F66 /* CompaniesTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507B0D98279C7C7A00276F66 /* CompaniesTableViewControllerDelegate.swift */; };
-		50A20C222799462600E5E285 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A20C212799462600E5E285 /* Model.swift */; };
+		50981DB327AA4E8C009D906C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50981DB227AA4E8C009D906C /* ListViewController.swift */; };
+		50981DB527AA5435009D906C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50981DB427AA5435009D906C /* Model.swift */; };
 		50D987042792D988001FF7DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987032792D988001FF7DF /* AppDelegate.swift */; };
 		50D9870D2792D989001FF7DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50D9870C2792D989001FF7DF /* Assets.xcassets */; };
 		50D987102792D989001FF7DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D9870E2792D989001FF7DF /* LaunchScreen.storyboard */; };
 		50D987252792D9E6001FF7DF /* CompanyTableMinion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987172792D9E6001FF7DF /* CompanyTableMinion.swift */; };
 		50D987262792D9E6001FF7DF /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987182792D9E6001FF7DF /* DataLoader.swift */; };
-		50D987272792D9E6001FF7DF /* CompaniesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987192792D9E6001FF7DF /* CompaniesTableViewController.swift */; };
 		50D987282792D9E6001FF7DF /* HeaderHackTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9871A2792D9E6001FF7DF /* HeaderHackTableView.swift */; };
-		50D987292792D9E6001FF7DF /* CompaniesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9871B2792D9E6001FF7DF /* CompaniesScene.swift */; };
 		50D9872A2792D9E6001FF7DF /* CompaniesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9871C2792D9E6001FF7DF /* CompaniesTableView.swift */; };
 		50D9872B2792D9E6001FF7DF /* ArrowHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D9871E2792D9E6001FF7DF /* ArrowHeaderView.xib */; };
 		50D9872C2792D9E6001FF7DF /* ArrowHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9871F2792D9E6001FF7DF /* ArrowHeaderView.swift */; };
 		50D9872D2792D9E6001FF7DF /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987202792D9E6001FF7DF /* DestinationViewController.swift */; };
-		50D9872E2792D9E6001FF7DF /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987212792D9E6001FF7DF /* HomeScene.swift */; };
 		50D9872F2792D9E6001FF7DF /* staff.json in Resources */ = {isa = PBXBuildFile; fileRef = 50D987232792D9E6001FF7DF /* staff.json */; };
 		50D987302792D9E6001FF7DF /* JSON-README.md in Resources */ = {isa = PBXBuildFile; fileRef = 50D987242792D9E6001FF7DF /* JSON-README.md */; };
-		50D987372792DA60001FF7DF /* AccordionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987352792DA60001FF7DF /* AccordionTableViewController.swift */; };
 		50D987382792DA60001FF7DF /* AccordionTableMinion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987362792DA60001FF7DF /* AccordionTableMinion.swift */; };
-		50D9873A2792DA73001FF7DF /* Array+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987392792DA73001FF7DF /* Array+helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		50A20B532799332B00E5E285 /* Embed Frameworks */ = {
+		5078199C27AE8FC8001AC9F8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				507B0D97279C767A00276F66 /* AccordionTable.framework in Embed Frameworks */,
+				5078199B27AE8FC8001AC9F8 /* AccordionTable.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,12 +42,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5078199927AE8FC8001AC9F8 /* AccordionTable.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AccordionTable.xcframework; path = Carthage/Build/AccordionTable.xcframework; sourceTree = "<group>"; };
 		5079056D279C05D80014FF35 /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
-		5079056F279C2F360014FF35 /* CompanyCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCellDelegate.swift; sourceTree = "<group>"; };
-		50790571279C2F810014FF35 /* CompanyTableMinionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableMinionDataSource.swift; sourceTree = "<group>"; };
 		507B0D95279C767A00276F66 /* AccordionTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AccordionTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		507B0D98279C7C7A00276F66 /* CompaniesTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesTableViewControllerDelegate.swift; sourceTree = "<group>"; };
-		50A20C212799462600E5E285 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		50981DB227AA4E8C009D906C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		50981DB427AA5435009D906C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		50D987002792D988001FF7DF /* MeltingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeltingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D987032792D988001FF7DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50D9870C2792D989001FF7DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,19 +54,14 @@
 		50D987112792D989001FF7DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D987172792D9E6001FF7DF /* CompanyTableMinion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyTableMinion.swift; sourceTree = "<group>"; };
 		50D987182792D9E6001FF7DF /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
-		50D987192792D9E6001FF7DF /* CompaniesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesTableViewController.swift; sourceTree = "<group>"; };
 		50D9871A2792D9E6001FF7DF /* HeaderHackTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderHackTableView.swift; sourceTree = "<group>"; };
-		50D9871B2792D9E6001FF7DF /* CompaniesScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesScene.swift; sourceTree = "<group>"; };
 		50D9871C2792D9E6001FF7DF /* CompaniesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesTableView.swift; sourceTree = "<group>"; };
 		50D9871E2792D9E6001FF7DF /* ArrowHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrowHeaderView.xib; sourceTree = "<group>"; };
 		50D9871F2792D9E6001FF7DF /* ArrowHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrowHeaderView.swift; sourceTree = "<group>"; };
 		50D987202792D9E6001FF7DF /* DestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
-		50D987212792D9E6001FF7DF /* HomeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 		50D987232792D9E6001FF7DF /* staff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = staff.json; sourceTree = "<group>"; };
 		50D987242792D9E6001FF7DF /* JSON-README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "JSON-README.md"; sourceTree = "<group>"; };
-		50D987352792DA60001FF7DF /* AccordionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionTableViewController.swift; sourceTree = "<group>"; };
 		50D987362792DA60001FF7DF /* AccordionTableMinion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionTableMinion.swift; sourceTree = "<group>"; };
-		50D987392792DA73001FF7DF /* Array+helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				507B0D96279C767A00276F66 /* AccordionTable.framework in Frameworks */,
+				5078199A27AE8FC8001AC9F8 /* AccordionTable.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,23 +97,17 @@
 			isa = PBXGroup;
 			children = (
 				50D987032792D988001FF7DF /* AppDelegate.swift */,
-				50D987392792DA73001FF7DF /* Array+helper.swift */,
-				50A20C212799462600E5E285 /* Model.swift */,
-				50D9873B2792DA7B001FF7DF /* BoilerPlate */,
-				50D987212792D9E6001FF7DF /* HomeScene.swift */,
-				50D9871B2792D9E6001FF7DF /* CompaniesScene.swift */,
-				50D987202792D9E6001FF7DF /* DestinationViewController.swift */,
-				50D9871C2792D9E6001FF7DF /* CompaniesTableView.swift */,
-				50D987172792D9E6001FF7DF /* CompanyTableMinion.swift */,
-				50790571279C2F810014FF35 /* CompanyTableMinionDataSource.swift */,
-				50D987192792D9E6001FF7DF /* CompaniesTableViewController.swift */,
-				507B0D98279C7C7A00276F66 /* CompaniesTableViewControllerDelegate.swift */,
-				50D987182792D9E6001FF7DF /* DataLoader.swift */,
-				5079056D279C05D80014FF35 /* CompanyCell.swift */,
-				5079056F279C2F360014FF35 /* CompanyCellDelegate.swift */,
-				50D9871A2792D9E6001FF7DF /* HeaderHackTableView.swift */,
-				50D9871D2792D9E6001FF7DF /* ArrowHeaderView */,
 				50D987222792D9E6001FF7DF /* JSON */,
+				50981DB427AA5435009D906C /* Model.swift */,
+				50D9871A2792D9E6001FF7DF /* HeaderHackTableView.swift */,
+				50D9871C2792D9E6001FF7DF /* CompaniesTableView.swift */,
+				5079056D279C05D80014FF35 /* CompanyCell.swift */,
+				50D987182792D9E6001FF7DF /* DataLoader.swift */,
+				50981DB227AA4E8C009D906C /* ListViewController.swift */,
+				50D987202792D9E6001FF7DF /* DestinationViewController.swift */,
+				50D987362792DA60001FF7DF /* AccordionTableMinion.swift */,
+				50D987172792D9E6001FF7DF /* CompanyTableMinion.swift */,
+				50D9871D2792D9E6001FF7DF /* ArrowHeaderView */,
 				50D9870C2792D989001FF7DF /* Assets.xcassets */,
 				50D9870E2792D989001FF7DF /* LaunchScreen.storyboard */,
 				50D987112792D989001FF7DF /* Info.plist */,
@@ -155,18 +136,10 @@
 		50D987322792DA33001FF7DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5078199927AE8FC8001AC9F8 /* AccordionTable.xcframework */,
 				507B0D95279C767A00276F66 /* AccordionTable.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		50D9873B2792DA7B001FF7DF /* BoilerPlate */ = {
-			isa = PBXGroup;
-			children = (
-				50D987352792DA60001FF7DF /* AccordionTableViewController.swift */,
-				50D987362792DA60001FF7DF /* AccordionTableMinion.swift */,
-			);
-			path = BoilerPlate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +152,7 @@
 				50D986FC2792D988001FF7DF /* Sources */,
 				50D986FD2792D988001FF7DF /* Frameworks */,
 				50D986FE2792D988001FF7DF /* Resources */,
-				50A20B532799332B00E5E285 /* Embed Frameworks */,
+				5078199C27AE8FC8001AC9F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,23 +218,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50D987272792D9E6001FF7DF /* CompaniesTableViewController.swift in Sources */,
 				50D987262792D9E6001FF7DF /* DataLoader.swift in Sources */,
-				507B0D99279C7C7A00276F66 /* CompaniesTableViewControllerDelegate.swift in Sources */,
 				50D987252792D9E6001FF7DF /* CompanyTableMinion.swift in Sources */,
 				50D9872D2792D9E6001FF7DF /* DestinationViewController.swift in Sources */,
 				50D9872C2792D9E6001FF7DF /* ArrowHeaderView.swift in Sources */,
 				50D9872A2792D9E6001FF7DF /* CompaniesTableView.swift in Sources */,
-				50790570279C2F360014FF35 /* CompanyCellDelegate.swift in Sources */,
+				50981DB327AA4E8C009D906C /* ListViewController.swift in Sources */,
 				50D987382792DA60001FF7DF /* AccordionTableMinion.swift in Sources */,
-				50A20C222799462600E5E285 /* Model.swift in Sources */,
-				50D987292792D9E6001FF7DF /* CompaniesScene.swift in Sources */,
-				50D987372792DA60001FF7DF /* AccordionTableViewController.swift in Sources */,
 				5079056E279C05D80014FF35 /* CompanyCell.swift in Sources */,
 				50D987282792D9E6001FF7DF /* HeaderHackTableView.swift in Sources */,
-				50790572279C2F810014FF35 /* CompanyTableMinionDataSource.swift in Sources */,
-				50D9873A2792DA73001FF7DF /* Array+helper.swift in Sources */,
-				50D9872E2792D9E6001FF7DF /* HomeScene.swift in Sources */,
+				50981DB527AA5435009D906C /* Model.swift in Sources */,
 				50D987042792D988001FF7DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

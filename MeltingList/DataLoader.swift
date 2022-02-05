@@ -2,20 +2,19 @@ import Foundation
 
 struct DataLoader {
 
-    static func go(randomise: Bool) async throws -> CompanyStore {
-        var collection = CompanyStore()
-        let companies = try await read()
-        for company in companies {
-            if randomise {
-                collection[company] = company.staff.maybeRemoveRandomElement()
-            } else {
-                collection[company] = company.staff
+    static func go(randomise: Bool) throws -> [Company: [Person]] {
+        try read().reduce(into: [Company: [Person]](), { storage, company in
+            var entity = company
+            defer {
+                storage[entity] = entity.staff
             }
-        }
-        return collection
+            if randomise {
+                entity = entity.maybeRemoveRandomStaffMember()
+            }
+        })
     }
 
-    private static func read() async throws -> [Company] {
+    private static func read() throws -> [Company] {
         let url = Bundle.main.url(forResource: "staff", withExtension: "json")!
         let data = try Data(contentsOf: url)
         return try JSONDecoder().decode([Company].self, from: data)
