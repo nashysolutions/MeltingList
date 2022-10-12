@@ -5,7 +5,12 @@ final class ArrowHeaderView: HeaderView {
     
     @IBOutlet fileprivate weak var mainTitleLabel: UILabel!
     @IBOutlet fileprivate weak var arrowImageView: UIImageView?
-        
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        arrowImageView?.isHidden = !collapsibleSectionsEnabled
+    }
+
     override func open(animationDuration: CGFloat) {
         let animated = animationDuration > 0
         if animated == true && isRotating == false {

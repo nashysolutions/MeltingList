@@ -17,6 +17,7 @@ final class ListViewController: UIViewController {
 
     private lazy var diffableTableManager = AccordionTable<Company, Person>(
         dataSource: tableDataSource,
+        enabledFeatures: collapsibleSectionsEnabled ? [.collapsible] : [],
         headerProvider: { tableView, index, section in
             let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: ArrowHeaderView.identifier) as! ArrowHeaderView
             view.updateTitle(with: section.name)
@@ -46,7 +47,9 @@ final class ListViewController: UIViewController {
         
         tableView.delegate = tableMinion
         
-        tableView.disableFloatingHeaders()
+        if collapsibleSectionsEnabled {
+            tableView.disableFloatingHeaders()
+        }
         
         if #available(iOS 15.0, *) {
             tableView.sectionHeaderTopPadding = 0

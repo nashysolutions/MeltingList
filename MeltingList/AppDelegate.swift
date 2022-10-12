@@ -1,5 +1,8 @@
 import UIKit
 
+// Toggle collapsible sections on or off
+let collapsibleSectionsEnabled = true
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
