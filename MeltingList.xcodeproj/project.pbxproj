@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5078199A27AE8FC8001AC9F8 /* AccordionTable.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5078199927AE8FC8001AC9F8 /* AccordionTable.xcframework */; };
-		5078199B27AE8FC8001AC9F8 /* AccordionTable.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5078199927AE8FC8001AC9F8 /* AccordionTable.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50380C0E29875FBD00B90079 /* AccordionTable in Frameworks */ = {isa = PBXBuildFile; productRef = 50380C0D29875FBD00B90079 /* AccordionTable */; };
 		5079056E279C05D80014FF35 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079056D279C05D80014FF35 /* CompanyCell.swift */; };
 		50981DB327AA4E8C009D906C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50981DB227AA4E8C009D906C /* ListViewController.swift */; };
 		50981DB527AA5435009D906C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50981DB427AA5435009D906C /* Model.swift */; };
@@ -26,20 +25,6 @@
 		50D987302792D9E6001FF7DF /* JSON-README.md in Resources */ = {isa = PBXBuildFile; fileRef = 50D987242792D9E6001FF7DF /* JSON-README.md */; };
 		50D987382792DA60001FF7DF /* AccordionTableMinion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D987362792DA60001FF7DF /* AccordionTableMinion.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5078199C27AE8FC8001AC9F8 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5078199B27AE8FC8001AC9F8 /* AccordionTable.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5078199927AE8FC8001AC9F8 /* AccordionTable.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AccordionTable.xcframework; path = Carthage/Build/AccordionTable.xcframework; sourceTree = "<group>"; };
@@ -69,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5078199A27AE8FC8001AC9F8 /* AccordionTable.xcframework in Frameworks */,
+				50380C0E29875FBD00B90079 /* AccordionTable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +137,6 @@
 				50D986FC2792D988001FF7DF /* Sources */,
 				50D986FD2792D988001FF7DF /* Frameworks */,
 				50D986FE2792D988001FF7DF /* Resources */,
-				5078199C27AE8FC8001AC9F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +144,7 @@
 			);
 			name = MeltingList;
 			packageProductDependencies = (
+				50380C0D29875FBD00B90079 /* AccordionTable */,
 			);
 			productName = MeltingList;
 			productReference = 50D987002792D988001FF7DF /* MeltingList.app */;
@@ -189,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 50D986F72792D988001FF7DF;
+			packageReferences = (
+				50380C0C29875FBD00B90079 /* XCRemoteSwiftPackageReference "accordion-table" */,
+			);
 			productRefGroup = 50D987012792D988001FF7DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -440,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50380C0C29875FBD00B90079 /* XCRemoteSwiftPackageReference "accordion-table" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nashysolutions/accordion-table.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50380C0D29875FBD00B90079 /* AccordionTable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50380C0C29875FBD00B90079 /* XCRemoteSwiftPackageReference "accordion-table" */;
+			productName = AccordionTable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50D986F82792D988001FF7DF /* Project object */;
 }
